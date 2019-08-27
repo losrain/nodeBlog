@@ -1,8 +1,8 @@
 <template>
   <div class="kuang">
-    <div class="head">25周相敏轨道电路信号监测系统</div>
+    <!-- <div class="head">25周相敏轨道电路信号监测系统</div> -->
     <div class="content">
-      <div class="left">
+      <!-- <div class="left">
         <el-menu
           default-active="0"
           class="el-menu-vertical-demo"
@@ -15,7 +15,7 @@
           </el-menu-item>
           </template>
         </el-menu>
-      </div>
+      </div> -->
       <div class="right">
         <router-view />
       </div>
@@ -39,7 +39,7 @@ export default {
           },{
              icon: 'el-icon-location',
              title: '历史曲线',
-             path: 'HomePage'
+             path: 'echarts'
           },{
              icon: 'el-icon-location',
              title: '历史报警',

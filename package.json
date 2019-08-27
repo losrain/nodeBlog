@@ -13,6 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "echarts": "^4.2.1",
+    "element-ui": "^2.11.1",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "vue": "^2.5.2",

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/view/home.vue'
 import HomePage from '@/view/homePage.vue'
+import echarts from '@/view/echarts.vue'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
           path: 'index',
           name: 'HomePage',
           component: HomePage,
+        },
+        {
+          path: 'line',
+          name: 'echarts',
+          component: echarts,
         }
       ]
     }
