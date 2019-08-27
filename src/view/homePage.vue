@@ -10,6 +10,16 @@
           <span class="quan" :style="'border-color:'+ item.color"></span>
       </div>
     </div>
+    <el-table :data="tableData" border style="width: 100%">
+      <el-table-column type="index" label="序号"></el-table-column>
+      <el-table-column prop="yu1" label="一级定位区域"></el-table-column>
+      <el-table-column prop="type" label="故障类型"></el-table-column>
+      <el-table-column prop="yu3" label="二级定位区域"></el-table-column>
+      <el-table-column prop="yu2" label="三级定位区域"></el-table-column>
+      <el-table-column prop="sdate" label="开始时间"></el-table-column>
+      <el-table-column prop="edate" label="结束时间"></el-table-column>
+      <el-table-column prop="bei" label="备注"></el-table-column>
+    </el-table>
   </div>
 </template>
 
@@ -39,7 +49,63 @@ export default {
     }
     return{
       xiaData: xia,
-      shangData: shang
+      shangData: shang,
+      tableData: [
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        },
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        },
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        },
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        },
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        },
+        {
+          yu1: "成都",
+          yu2: "长勺",
+          yu3: "云娜",
+          sdate: "2016-05-02",
+          edate: "2016-05-02",
+          type: "正常",
+          bei: "完美"
+        }
+      ]
     }
   }
 }
@@ -48,7 +114,10 @@ export default {
 <style lang="less">
 .homepage{
   padding: 80px 70px;
-  min-height: ~"calc(100vh - 100px)";;
+  min-height: ~"calc(100vh - 100px)";
+  .el-table{
+    margin-top: 100px;
+  }
   .gang{
     height: 110px;
     position: relative;

@@ -1,8 +1,8 @@
 <template>
   <div class="kuang">
-    <!-- <div class="head">25周相敏轨道电路信号监测系统</div> -->
+    <div class="head">25周相敏轨道电路信号监测系统</div>
     <div class="content">
-      <!-- <div class="left">
+      <div class="left">
         <el-menu
           default-active="0"
           class="el-menu-vertical-demo"
@@ -11,11 +11,11 @@
         <template v-for="(item, index) in menu">
           <el-menu-item :index ="''+index" :key="index">
             <i :class="item.icon"></i>
-            <span>{{item.title}}{{index}}</span>
+            <span>{{item.title}}</span>
           </el-menu-item>
           </template>
         </el-menu>
-      </div> -->
+      </div>
       <div class="right">
         <router-view />
       </div>
@@ -35,7 +35,7 @@ export default {
           },{
              icon: 'el-icon-location',
              title: '实时数据',
-             path: 'Home'
+             path: 'system'
           },{
              icon: 'el-icon-location',
              title: '历史曲线',
@@ -43,19 +43,19 @@ export default {
           },{
              icon: 'el-icon-location',
              title: '历史报警',
-             path: 'HomePage'
+             path: 'Tabels'
           },{
              icon: 'el-icon-location',
              title: '系统状态',
-             path: 'HomePage'
+             path: 'system'
           },{
              icon: 'el-icon-location',
              title: '数据导出',
-             path: 'HomePage'
+             path: 'Tabels'
           },{
              icon: 'el-icon-location',
              title: '系统管理',
-             path: 'HomePage'
+             path: 'echarts'
           }]
       }
   },
@@ -87,7 +87,7 @@ export default {
       top: 0;
       width: 160px;
       .el-menu {
-        width: 150px;
+        width: 160px;
         border: none;
       }
     }
@@ -95,6 +95,7 @@ export default {
       padding: 10px;
       margin-left: 160px;
       border-left: 1px solid #eee;
+      min-height: ~"calc(100vh - 80px)";
     }
   }
 }

@@ -28,7 +28,8 @@ export default {
     toolbox: {
         feature: {
             saveAsImage: {}
-        }
+        },
+        right: 20
     },
     xAxis: {
         type: 'category',
